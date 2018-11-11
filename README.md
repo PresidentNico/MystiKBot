@@ -1,0 +1,2 @@
+# MystiKBot
+Easy team understanding
