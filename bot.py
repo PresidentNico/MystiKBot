@@ -1,5 +1,5 @@
 import discord
-import SECRETS
+import os
 
 
 #Variablen
@@ -28,4 +28,4 @@ async def on_message(message):
         await client.send_message(message.channel, embed=emb)
 
 
-client.run("NTEwODE0NzAwMTg4MDczOTk0.Dsh--A.GhMDz9p6kAwvI8B8NOJMYnY2044")
+client.run(os.getenv("TOKEN"))
