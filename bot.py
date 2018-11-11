@@ -22,10 +22,11 @@ async def on_message(message):
         await client.delete_message(message)
         emb = discord.Embed(title="-----___**SCRIM**___-----", color=0xbe3c1b)
         emb.set_author(name="MystiK Bot ", icon_url='https://cdn.discordapp.com/attachments/496460929337131008/496798174997118984/Final.png')
-        emb.add_field(name="Time: ", value=time, inline=True)
+        emb.add_field(name="Time: ", value=time+" UK", inline=True)
         emb.add_field(name=enemy+" vs", value="MystiK EU A", inline=True)
         emb.set_footer(text="MystiK Bot by Lima")
         await client.send_message(message.channel, embed=emb)
+        await client.add_reaction(message,":thumbsup:")
         
     if message.content.lower().startswith("?game"):
         time = message.content[5:8] + " " + message.content[8:10]
@@ -33,7 +34,7 @@ async def on_message(message):
         await client.delete_message(message)
         emb = discord.Embed(title="-----___**GAME**___-----", color=0xbe3c1b)
         emb.set_author(name="MystiK Bot ", icon_url='https://cdn.discordapp.com/attachments/496460929337131008/496798174997118984/Final.png')
-        emb.add_field(name="Time: ", value=time, inline=True)
+        emb.add_field(name="Time: ", value=time+" UK", inline=True)
         emb.add_field(name=enemy+" vs", value="MystiK EU A", inline=True)
         emb.set_footer(text="MystiK Bot by Lima")
         await client.send_message(message.channel, embed=emb)
