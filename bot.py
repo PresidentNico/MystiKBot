@@ -99,7 +99,7 @@ async def on_message(message):
 
     if message.content.lower().startswith("?hello"):
         a =  message.author.top_role.position
-        print(a)
+        await client.send_message(message.channel, a)
 
     if message.content.lower().startswith("?game"):
         time = message.content[5:8] + " " + message.content[8:10]
