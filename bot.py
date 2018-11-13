@@ -125,7 +125,7 @@ async def on_message(message):
         embed.set_footer(text="MystiK Bot by Lima")
         await client.send_message(message.channel, embed = embed)
         
-    if message.content.lower().startswith("?annoy"):
+   if message.content.lower().startswith("?annoy"):
         id = "<@369448048654548994>"
         for i in range(15):
             await client.send_message(message.channel,"Britons")
