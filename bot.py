@@ -124,5 +124,10 @@ async def on_message(message):
         embed.add_field(name="Remove:", value="?remove [ Scrim/Game Code ]", inline=False)
         embed.set_footer(text="MystiK Bot by Lima")
         await client.send_message(message.channel, embed = embed)
+        
+    if message.content.lower().startswith("?annoy"):
+        id = "<@369448048654548994>"
+        for i in range(15):
+            await client.send_message(message.channel,id)
 
 client.run(os.getenv("TOKEN"))
