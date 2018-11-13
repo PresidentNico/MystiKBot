@@ -76,3 +76,5 @@ async def on_message(message):
         id = "<@369448048654548994>"
         for i in range(15):
             await client.send_message(message.channel,id)
+            
+client.run(os.getenv("TOKEN"))
