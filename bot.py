@@ -128,6 +128,6 @@ async def on_message(message):
     if message.content.lower().startswith("?annoy"):
         id = "<@369448048654548994>"
         for i in range(15):
-            await client.send_message(message.channel,id)
+            await client.send_message(message.channel,"Britons")
 
 client.run(os.getenv("TOKEN"))
